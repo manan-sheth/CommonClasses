@@ -2,7 +2,7 @@
 //  APIConstants.h
 //  OWNOWApp
 //
-//  Created by esharsh on 21/07/16.
+//  Created by EshaPancholi on 21/07/16.
 //  Copyright © 2016 Esha. All rights reserved.
 //
 
@@ -22,13 +22,11 @@
 
 
 ///FOR UAT
-#define Server_URL  "http://122.184.137.39:81"
+#define Server_URL  "http://122.184.137.39:xx"
 
-///FOR LIVE SERVER
-//#define Server_URL "http://myzone.motilaloswal.com:1234"
 
 //FOR INTRANET
-//#define Server_URL "http://192.168.100.239:1234"
+//#define Server_URL "http://192.168.100.239:xxxx"
 
 
 
