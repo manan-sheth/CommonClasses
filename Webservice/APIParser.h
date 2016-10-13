@@ -1,6 +1,6 @@
 //
 //  APIParser.h
-//  OWNOWApp
+//  App
 //
 //  Created by esharsh on 21/07/16.
 //  Copyright © 2016 Esha. All rights reserved.
@@ -16,7 +16,8 @@ typedef void (^responseBlock) (bool status, NSError *error, id objects, NSString
 typedef enum {
     
     GET,
-    POST
+    POST,
+    PUT
     
 } APIType;
 
@@ -37,12 +38,14 @@ enum ResponseStatus
 
 + (id)sharedMediaServer;
 
-- (NSData *)dictionaryWithPropertiesOfObject:(id)obj;
+- (NSData *)dataWithPropertiesOfObject:(id)obj;
 - (NSData *)dictionaryWithMembersOfObject:(id)obj forMembers:(NSArray *)members;
 - (NSData *)dictionaryToJSONData:(NSDictionary *)dict;
 
-//- (NSMutableURLRequest *)urlRequestForURL:(NSURL *)url withObjects:(NSData *)objData isObject:(bool)customObj;
+- (NSDictionary *)dictionaryWithPropertiesOfObject:(id)obj;
 
-- (NSMutableURLRequest *)urlRequestForPOSTURL:(NSURL *)url withObjects:(NSData *)objData isObject:(bool)customObj;
-- (NSMutableURLRequest *)urlRequestForGETURL:(NSURL *)url;
+- (NSMutableURLRequest *)urlRequestForURL:(NSURL *)url forType:(APIType)type withObjects:(NSData *)objData isObject:(bool)customObj;
+
+- (void) setUserCookieforUrl : (NSString *) URL withResponse : (NSString*) response withParam : (NSString *) params;
+
 @end
