@@ -22,11 +22,11 @@
 
 
 ///FOR UAT
-#define Server_URL  "http://122.184.137.39:xx"
+#define Server_URL  "http://xxx.xx.xx:xx"
 
 
 //FOR INTRANET
-//#define Server_URL "http://192.168.100.239:xxxx"
+//#define Server_URL "http://xxx.xx.xx:xxxx"
 
 
 
