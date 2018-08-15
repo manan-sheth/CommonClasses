@@ -70,8 +70,8 @@
 - (IBAction)clickForLoginWithGoogle:(id)sender
 {
     GIDSignIn *signIn = [GIDSignIn sharedInstance];
-    signIn.clientID = @"397624619523-ldk1tsegb38g3uhdf8jtfohtmnbq0je4.apps.googleusercontent.com";
-    //Google iOS Key :: AIzaSyCFflYD1HU2ps_Yfk8pE5w6Szr04M-220k
+    signIn.clientID = @"CLIENT_ID";
+    //Google iOS Key :: iOS_KEY
     
     signIn.shouldFetchBasicProfile = true;
     signIn.delegate = self;
